@@ -1,2 +1,3 @@
 * text=auto !eol
 tag/test.txt -text
+trunk/test.txt -text
