@@ -13,7 +13,7 @@ int cmp(char*nachname, char*vorname, char*ref_nachname, char*ref_vorname) {
     if(sizeof(nachname)!=sizeof(ref_nachname)) return 1; // Nachname kommt in anderem vor, sind aber nicht identisch. Kürzerer soll per Def. vorne stehen
     
     //Nachnamen gleich, Vornamen vergleichen
-    for(int i=0; i<((sizeof(vorname)<sizeof(ref_vorname))?sizeof(vorname):sizeof(ref_vorname)); i++) {
+    for(i=0; i<((sizeof(vorname)<sizeof(ref_vorname))?sizeof(vorname):sizeof(ref_vorname)); i++) {
         if(vorname[i]<ref_vorname[i]) {
             return 1;
         } else if(vorname[i]>ref_vorname[i]) {
