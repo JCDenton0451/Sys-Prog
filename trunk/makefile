@@ -1,4 +1,4 @@
-OBJECTS = code.o mylist.o
+OBJECTS = code.o mylist.o stringfunc.o
 CPPFLAGS = -g -Wall
 
 prog: code.o mylist.o 
@@ -9,3 +9,6 @@ code.o: code.c
           
 mylist.o: mylist.c
           gcc $(CPPFLAGS) -c mylist.c
+          
+stringfunc.o: stringfunc.c          
+          gcc $(CPPFLAGS) -c stringfunc.c
