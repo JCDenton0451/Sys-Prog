@@ -20,7 +20,8 @@ int main() {
         int b=0;
         //int real_v;
         //int real_n;
-        for(int i=0; i<sizeof(puffer); i++) {
+        int i;
+        for(i=0; i<sizeof(puffer); i++) {
             if(b==0) { // Vornamen trennen
                 if(puffer[i]!=' ') {
                     vorname=realloc(vorname, sizeof(char)*(i+1));
