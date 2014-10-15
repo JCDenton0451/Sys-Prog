@@ -1,7 +1,8 @@
 #include "stringfunc.h"
 
 int cmp(char*nachname, char*vorname, char*ref_nachname, char*ref_vorname) {
-    for(int i=0; i<((sizeof(nachname)<sizeof(ref_nachname))?sizeof(nachname):sizeof(ref_nachname)); i++) {
+    int i;
+    for(i=0; i<((sizeof(nachname)<sizeof(ref_nachname))?sizeof(nachname):sizeof(ref_nachname)); i++) {
         if(nachname[i]<ref_nachname[i]) {
             return 1;
         } else if(nachname[i]>ref_nachname[i]) {
