@@ -33,7 +33,7 @@ int main() {
                 }
             } else { // Nachnamen trennen
                 if(puffer[i]!='\n') {
-                   //nachname=realloc(nachname, sizeof(char)*(i-b+1));
+                   //.nachname=realloc(nachname, sizeof(char)*(i-b+1));
                    nachname[i-b]=puffer[i];
                 } else {
                    nachname[i-b]='\0';
