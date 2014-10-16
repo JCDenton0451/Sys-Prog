@@ -24,7 +24,7 @@ int main() {
         for(i=0; i<sizeof(puffer); i++) {
             if(b==0) { // Vornamen trennen
                 if(puffer[i]!=' ') {
-                    vorname=realloc(vorname, sizeof(char)*(i+1));
+                    //vorname=realloc(vorname, sizeof(char)*(i+1));
                     vorname[i]=puffer[i];
                 } else {
                     vorname[i]='\0';
@@ -33,7 +33,7 @@ int main() {
                 }
             } else { // Nachnamen trennen
                 if(puffer[i]!='\n') {
-                   nachname=realloc(nachname, sizeof(char)*(i-b+1));
+                   //nachname=realloc(nachname, sizeof(char)*(i-b+1));
                    nachname[i-b]=puffer[i];
                 } else {
                    nachname[i-b]='\0';
