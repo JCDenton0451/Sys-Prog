@@ -18,6 +18,7 @@ int main() {
         vorname=malloc(100);
         nachname=malloc(100);
         int b=0;
+        
         //int real_v;
         //int real_n;
         int i;
